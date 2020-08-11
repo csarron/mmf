@@ -5,6 +5,8 @@ import typing
 import warnings
 import numpy as np
 
+import numpy as np
+
 import mmf.utils.download as download
 from mmf.datasets.base_dataset_builder import BaseDatasetBuilder
 from mmf.datasets.concat_dataset import MMFConcatDataset

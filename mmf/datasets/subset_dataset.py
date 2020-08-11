@@ -1,5 +1,6 @@
 from torch.utils.data.dataset import Subset
 
+
 class MMFSubset(Subset):
     def __init__(self, dataset, indices):
         super().__init__(dataset, indices)
