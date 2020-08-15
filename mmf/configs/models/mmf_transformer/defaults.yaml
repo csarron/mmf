@@ -1,0 +1,22 @@
+model_config:
+  mmf_transformer:
+    transformer_base: bert-base-uncased
+    training_head_type: classification
+    visual_embedding_dim: 2048
+    visual_position_dim: 1
+    modalities:
+      - text
+      - image
+    initializer_range: 0.02
+    initializer_mean: 0.0
+    layer_norm_weight_fill: 1.0
+    random_initialize: false
+    freeze_base: false
+    finetune_lr_multiplier: 1
+    image_encoder:
+      type: resnet152
+      params:
+        pretrained: true
+        pool_type: avg
+        num_output_features: 1
+    freeze_encoder: false
